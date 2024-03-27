@@ -1,0 +1,33 @@
+/* Style for the container div */
+.expenses-filter {
+    margin-bottom: 1rem;
+    
+  }
+  
+  /* Style for the label */
+  .expenses-filter label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color:white /* Example margin */
+  }
+  
+  /* Style for the select dropdown */
+  .expenses-filter select {
+    padding: 0.5rem; /* Example padding */
+    border: 1px solid #d10f0f; /* Example border */
+    border-radius: 4px; /* Example border radius */
+    font-size: 1rem; /* Example font size */
+  }
+  
+  /* Style for select options */ 
+  .expenses-filter select option {
+    background-color: #fff; /* Example background color */
+    color: #333; /* Example text color */
+  }
+  
+  /* Style for select hover and focus */
+  .expenses-filter select:hover,
+  .expenses-filter select:focus {
+    border-color: #aaa; /* Example border color */
+  }
+  
