@@ -5,13 +5,13 @@ import './ExpenseItem.css';
 
 const ExpenseItem=(props)=> {
   const [price,setPrice]=useState(props.price)
-  console.log('ExpenseItem Evaluated By React')
   const clickHandler = () => {
    setPrice(100)
     console.log(price)
   }; 
 
   return (
+    <li>
     <Card className="expense-item"> 
       <ExpenseDate date={props.date}/> 
       <div className="expense-item__description">
@@ -19,13 +19,10 @@ const ExpenseItem=(props)=> {
         <div className="expense-item__price">${price} </div> 
         <button  onClick={clickHandler}>Change Expense</button>
       </div>
-      
-    </Card> 
+      </Card> 
+      </li>
   );
 }
+ export default ExpenseItem;
+
  
-
-export default ExpenseItem;
-
-
-
